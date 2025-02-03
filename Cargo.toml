@@ -10,3 +10,12 @@ clap = { version = "4.5.27", features = ["derive"] }
 fastq = "0.6.0"
 needletail = "0.6.1"
 seq_io = "0.3.3"
+paraseq = { git = "ssh://github.com/noamteyssier/paraseq" }
+
+[profile.release]
+lto = true
+codegen-units = 1
+
+[[bin]]
+name = "psb"
+path = "src/main.rs"
