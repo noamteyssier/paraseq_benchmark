@@ -9,7 +9,7 @@ gen_data:
     @mkdir -p data
     for size in {{RECORD_SIZES}}; do \
         echo "Generating records of size ${size}"; \
-        nucgen -fq -n {{NUM_RECORDS}} -l $size -o data/records_${size}.fastq; \
+        nucgen -fq -n {{NUM_RECORDS}} -l $size data/records_${size}.fastq; \
     done
 
 run_benchmarks:
