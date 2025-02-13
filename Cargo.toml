@@ -1,6 +1,6 @@
 [package]
 name = "paraseq_benchmark"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 [dependencies]
@@ -9,8 +9,8 @@ bio = "2.0.3"
 clap = { version = "4.5.27", features = ["derive"] }
 fastq = "0.6.0"
 needletail = "0.6.1"
+paraseq = "0.1.1"
 seq_io = "0.3.3"
-paraseq = { git = "ssh://github.com/noamteyssier/paraseq" }
 
 [profile.release]
 lto = true
